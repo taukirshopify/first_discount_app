@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f85ed7527015569b4c5ae2e9468b099d"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+name = "tiered-discount"
+handle = "tiered-discount-16"
+
+[webhooks]
+api_version = "2024-10"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_discounts"
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[pos]
+embedded = false
+
+[build]
+include_config_on_deploy = true
+dev_store_url = "bro2017.myshopify.com"
